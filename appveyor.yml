@@ -28,7 +28,7 @@ assembly_info:
   assembly_informational_version: '{version}'
 
 before_build:
-  - git submodule update --init --recursive --remote
+  - git submodule update --init --recursive
   - nuget restore PaisleyPark.sln
   - nuget restore lib/Nhaama.FFXIV/Nhaama.FFXIV.csproj
   - nuget restore lib/Nhaama.Memory/Nhaama.Memory.csproj
