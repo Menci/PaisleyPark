@@ -48,7 +48,7 @@ namespace PaisleyParkUpdater
 			}
 
 			// Create request for Github REST API for the latest release of Paisley Park.
-			if (WebRequest.Create("https://api.github.com/repos/LeonBlade/PaisleyPark/releases/latest") is HttpWebRequest request)
+			if (WebRequest.Create("https://api.github.com/repos/Menci/PaisleyPark/releases/latest") is HttpWebRequest request)
 			{
 				request.Method = "GET";
 				request.UserAgent = "PaisleyPark";
@@ -92,7 +92,7 @@ namespace PaisleyParkUpdater
 					if (response == MessageBoxResult.Yes)
 					{
 						// Visit the latest releases page on GitHub to download the latest Paisley Park.
-						Process.Start("https://github.com/LeonBlade/PaisleyPark/releases/latest");
+						Process.Start("https://github.com/Menci/PaisleyPark/releases/latest");
 					}
 				}
 			}
